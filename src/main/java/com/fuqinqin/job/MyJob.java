@@ -17,6 +17,6 @@ public class MyJob extends QuartzJobBean {
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         JobDetail jobDetail = jobExecutionContext.getJobDetail();
         String jobName = jobDetail.getKey().getName();
-        log.info("jobName={}, count={}, hash={} -- 1 --", jobName, count++, this.hashCode());
+        log.info("jobName={}, count={}, hash={} -- 2 --", jobName, count++, this.hashCode());
     }
 }
